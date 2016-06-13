@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#map-canvas {
+  position: absolute;
+      height: 300px;
+      width: 880px;
+      left: 85px;
+      top: 185px;
+}
