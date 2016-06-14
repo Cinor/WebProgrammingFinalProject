@@ -2,7 +2,6 @@ var markernumber=0;
 var marker;
 var lat=[25.150024,25.1325611,25.1596123,25.1283];
 var lng=[121.7768812,121.739341,121.765433,121.7432];
-var con=["ntou","keelung station","peaceful island","nightmarket front of temple"]
 function start()
 {
    var button1 = document.getElementById( "button1" );
