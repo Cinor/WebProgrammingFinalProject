@@ -12,7 +12,7 @@ var marker1;
     marker = map.addMarker({
     lat: lat[markernumber],
     lng: lng[markernumber],
-    content: 'ntou'
+    content: con[markernumber]
   });
 /*
   var marker2 = map.addMarker({
