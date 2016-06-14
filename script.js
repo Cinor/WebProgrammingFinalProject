@@ -27,10 +27,17 @@ var marker1;
     content: 'peaceful island'
   });
 
+<<<<<<< HEAD
   var marker4 = map.addMarker({
     lat: lat[3],
     lng: lng[3],
     content: 'front of tample'
+=======
+  var marker3 = map.addMarker({
+    lat: 25.1283,
+    lng: 121.7432,
+    content: 'front of temple'
+>>>>>>> 9b391edbe7e6a4e92d37be32c65def80bb3766cb
   });
 */
   map._removeMarker(marker1);
