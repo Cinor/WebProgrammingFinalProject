@@ -27,7 +27,7 @@
   var marker3 = map.addMarker({
     lat: 25.1283,
     lng: 121.7432,
-    content: 'front of tample'
+    content: 'front of temple'
   });
 
   //map._removeMarker(marker2);
