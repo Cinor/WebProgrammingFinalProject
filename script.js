@@ -10,9 +10,6 @@ var marker1;
   map = mapster.create(element, options);
 
     marker = map.addMarker({
-    lat: lat[markernumber],
-    lng: lng[markernumber],
-    content: con[markernumber]
   });
 /*
   var marker2 = map.addMarker({
