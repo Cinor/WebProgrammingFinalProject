@@ -1,3 +1,6 @@
+
+var marker1;
+
 (function(window, mapster) {
 
   // map options
@@ -6,31 +9,31 @@
   // map
   map = mapster.create(element, options);
 
-  var marker = map.addMarker({
-    lat: 25.150024,
-    lng: 121.7768812,
+    marker = map.addMarker({
+    lat: lat[markernumber],
+    lng: lng[markernumber],
     content: 'ntou'
   });
-
+/*
   var marker2 = map.addMarker({
-    lat: 25.1325611,
-    lng: 121.739341,
+    lat: lat[1],
+    lng: lng[1],
     content: 'Keelung station'
   });
 
   var marker3 = map.addMarker({
-    lat: 25.1596123,
-    lng: 121.765433,
+    lat: lat[2],
+    lng: lng[2],
     content: 'peaceful island'
   });
 
-  var marker3 = map.addMarker({
-    lat: 25.1283,
-    lng: 121.7432,
+  var marker4 = map.addMarker({
+    lat: lat[3],
+    lng: lng[3],
     content: 'front of tample'
   });
-
-  //map._removeMarker(marker2);
+*/
+  map._removeMarker(marker1);
 
   //console.log(map.markers);
 

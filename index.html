@@ -2,36 +2,24 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
-  <div id="map-canvas"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false">
-  </script>
-  <input type="button" value="1" style="position: absolute;
-  top: 113px;
-  height: 70px;
-  width: 220px;
-  left: 85px;"></input>
-  <input type="button" value="1" style="position: absolute;
-  top: 113px;
-  height: 70px;
-  width: 220px;
-  left: 305px;"></input>
-  <input type="button" value="1" style="position: absolute;
-  top: 113px;
-  height: 70px;
-  width: 220px;
-  left: 525px;"></input>
-  <input type="button" value="1" style="position: absolute;
-  top: 113px;
-  height: 70px;
-  width: 220px;
-  left: 745px;"></input>
-  <script src="Mapster.js"></script>
-  <script src="map-options.js"></script>
-  <script src="script.js"></script>
+    <div id="map-canvas"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="jquery-3.0.0.min.js"></script>
+
+<form action = "#">
+    <input id = "button1" type="button" class=button value="1" style="left: 85px;"></input>
+    <input id = "button2" type="button" class=button value="1" style="left: 305px;"></input>
+    <input id = "button3" type="button" class=button value="1" style="left: 525px;"></input>
+    <input id = "button4" type="button" class=button value="1" style="left: 745px;"></input>
+</form>
+    <script src="Mapster.js"></script>
+    <script src="map-options.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
