@@ -3,6 +3,7 @@
     text-align: center;
     width: 100%;
     height: 80px;
+    font-size:50px;
 }
 .header {
     background-color: #F1FAEE;
@@ -55,6 +56,7 @@ li {
     background-color: #1D3557;
     width: 100%;
     height: 70%;
+    /*background-image:url('die1.png');*/
 }
 #text {
     background-color: #457B9D;
@@ -71,4 +73,12 @@ li {
   text-align: center;
   color: white;
   bottom: 0px;
+}
+a.but {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
