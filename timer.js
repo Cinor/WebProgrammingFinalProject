@@ -6,7 +6,39 @@ var lat = [25.150024, 25.1325611, 25.1596123, 25.1283, 25.144658, 25.145639, 25.
 var lng = [121.7768812, 121.739341, 121.765433, 121.7432, 121.779831, 121.786015, 121.708087, 121.727093, 121.797491, 121.757408];
 
 function start() {
-    
+  var t = new Date(systemTime);
+  h = "0" + t.getHours();
+  text.innerHTML = h;
+  switch (h) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+      click1();
+      break;
+    default:
+
+  }
 } // end function start
 function click1() {
     markernumber = 0;
