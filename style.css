@@ -55,13 +55,13 @@ li {
 #pic {
     background-color: #1D3557;
     width: 100%;
-    height: 68%;
+    height: 60%;
     /*background-image:url('die1.png');*/
 }
 #text {
     background-color: #457B9D;
     width: 100%;
-    height: 32%;
+    height: 40%;
 }
 .footer {
     background-color: #DBBADD;
