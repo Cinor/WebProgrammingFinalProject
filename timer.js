@@ -4,10 +4,24 @@ var img;
 var text;
 var lat = [25.150024, 25.1325611, 25.1596123, 25.1283, 25.144658, 25.145639, 25.159463, 25.163325, 25.146013, 25.079253];
 var lng = [121.7768812, 121.739341, 121.765433, 121.7432, 121.779831, 121.786015, 121.708087, 121.727093, 121.797491, 121.757408];
+function current() {
+    var d = new Date(),
+        str = '';
+    str += d.getFullYear() + '年';
+    str += d.getMonth() + 1 + '月';
+    str += d.getDate() + '日';
+    str += d.getHours() + '時';
+    str += d.getMinutes() + '分';
+    str += d.getSeconds() + '秒';
+    return str;
+}
+setInterval(function() {
+    $("#nowTime").html(current)
+}, 1000);
 
 function start() {
   var t = new Date(systemTime);
-  h = "0" + t.getHours();
+  h = t.getHours();
   text.innerHTML = h;
   switch (h) {
     case 0:
