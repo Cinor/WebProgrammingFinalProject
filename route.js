@@ -20,10 +20,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   var checkboxArray = document.getElementById('waypoints');
   for (var i = 0; i < checkboxArray.length; i++) {
     if (checkboxArray.options[i].selected) {
-      alert(lat[i]);
-      var new_marker_position = new google.maps.LatLng(lat[i], lng[i]);
+      var latlng;
+      latlng=new google.maps.LatLng(lat[i], lng[i]);
       waypts.push({
-        location: new_marker_position,
+        location: latlng,
         stopover: true
       });
     }
