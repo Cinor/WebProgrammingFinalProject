@@ -1,9 +1,12 @@
+var lat = [25.150024, 25.1325611, 25.1596123, 25.1283, 25.144658, 25.145639, 25.159463, 25.163325, 25.146013, 25.079253];
+var lng = [121.7768812, 121.739341, 121.765433, 121.7432, 121.779831, 121.786015, 121.708087, 121.727093, 121.797491, 121.757408];
+
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 6,
-    center: {lat: 41.85, lng: -87.65}
+    zoom: 12,
+    center: {lat: 25.1325611, lng: 121.739341}
   });
   directionsDisplay.setMap(map);
 
@@ -17,16 +20,18 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   var checkboxArray = document.getElementById('waypoints');
   for (var i = 0; i < checkboxArray.length; i++) {
     if (checkboxArray.options[i].selected) {
+      alert(lat[i]);
+      var new_marker_position = new google.maps.LatLng(lat[i], lng[i]);
       waypts.push({
-        location: checkboxArray[i].value,
+        location: new_marker_position,
         stopover: true
       });
     }
   }
 
   directionsService.route({
-    origin: document.getElementById('start').value,
-    destination: document.getElementById('end').value,
+    origin: {lat: lat[document.getElementById('start').value],lng: lng[document.getElementById('start').value]},
+    destination: {lat: lat[document.getElementById('end').value],lng: lng[document.getElementById('end').value]},
     waypoints: waypts,
     optimizeWaypoints: true,
     travelMode: google.maps.TravelMode.DRIVING

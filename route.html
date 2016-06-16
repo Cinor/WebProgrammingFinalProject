@@ -5,13 +5,16 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Waypoints in directions</title>
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
     <link rel="stylesheet" href="route.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <script src="route.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnENfVbHG1AGd5jLX5JZl0AmD2UgffTbs&signed_in=true&callback=initMap" async defer></script>
     <div class="title"><a href="index.html" class="but">Travel Keelung</a></div>
-    <div class="header">景點介紹</div>
+    <div class="header">景點路線規劃</div>
     <div class="func">
         <a href="place.html" class="but">景點介紹</a>
         <a href="timeplace.html" class="but">時間景點推薦</a>
@@ -20,13 +23,19 @@
 
     <div id="map"></div>
     <div id="right-panel">
-        <div>
+         <div>
             <b>Start:</b>
             <select id="start">
-                <option value="Halifax, NS">Halifax, NS</option>
-                <option value="Boston, MA">Boston, MA</option>
-                <option value="New York, NY">New York, NY</option>
-                <option value="Miami, FL">Miami, FL</option>
+              <option value=0>國立臺灣海洋大學</option>
+              <option value=1>基隆車站</option>
+              <option value=2>和平島</option>
+              <option value=3>廟口夜市</option>
+              <option value=4>槓子寮砲台</option>
+              <option value=5>八斗子觀光漁港</option>
+              <option value=6>大武崙砲台</option>
+              <option value=7>外木山濱海風景區</option>
+              <option value=8>忘憂谷</option>
+              <option value=9>荖寮坑礦業生態園區</option>
             </select>
             <br>
             <b>Waypoints:</b>
@@ -34,35 +43,39 @@
             <i>(Ctrl-Click for multiple selection)</i>
             <br>
             <select multiple id="waypoints">
-                <option value="montreal, quebec">Montreal, QBC</option>
-                <option value="toronto, ont">Toronto, ONT</option>
-                <option value="chicago, il">Chicago</option>
-                <option value="winnipeg, mb">Winnipeg</option>
-                <option value="fargo, nd">Fargo</option>
-                <option value="calgary, ab">Calgary</option>
-                <option value="spokane, wa">Spokane</option>
+              <option value=0>國立臺灣海洋大學</option>
+              <option value=1>基隆車站</option>
+              <option value=2>和平島</option>
+              <option value=3>廟口夜市</option>
+              <option value=4>槓子寮砲台</option>
+              <option value=5>八斗子觀光漁港</option>
+              <option value=6>大武崙砲台</option>
+              <option value=7>外木山濱海風景區</option>
+              <option value=8>忘憂谷</option>
+              <option value=9>荖寮坑礦業生態園區</option>
             </select>
             <br>
             <b>End:</b>
             <select id="end">
-                <option value="Vancouver, BC">Vancouver, BC</option>
-                <option value="Seattle, WA">Seattle, WA</option>
-                <option value="San Francisco, CA">San Francisco, CA</option>
-                <option value="Los Angeles, CA">Los Angeles, CA</option>
+              <option value=0>國立臺灣海洋大學</option>
+              <option value=1>基隆車站</option>
+              <option value=2>和平島</option>
+              <option value=3>廟口夜市</option>
+              <option value=4>槓子寮砲台</option>
+              <option value=5>八斗子觀光漁港</option>
+              <option value=6>大武崙砲台</option>
+              <option value=7>外木山濱海風景區</option>
+              <option value=8>忘憂谷</option>
+              <option value=9>荖寮坑礦業生態園區</option>
             </select>
             <br>
             <input type="submit" id="submit">
         </div>
         <div id="directions-panel"></div>
     </div>
-
-    <div class="footer">
-        <a href="" src="" />說明文件</a>
+    <div class = "footer" style = "bottom: 0px;">
+        <a href = "" src="" />說明文件</a>
     </div>
-
-    <script src="route.js">
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnENfVbHG1AGd5jLX5JZl0AmD2UgffTbs&signed_in=true&callback=initMap" async defer></script>
 </body>
 
 </html>
